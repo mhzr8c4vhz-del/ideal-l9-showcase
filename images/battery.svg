@@ -1,0 +1,35 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .battery-body { fill: #4CAF50; stroke: #388E3C; stroke-width: 2; }
+    .battery-tip { fill: #388E3C; }
+    .charge-level { fill: #8BC34A; }
+  </style>
+  
+  <!-- 电池主体 -->
+  <rect x="20" y="25" width="140" height="50" rx="5" class="battery-body"/>
+  
+  <!-- 电池顶部 -->
+  <rect x="160" y="40" width="10" height="20" rx="2" class="battery-tip"/>
+  
+  <!-- 电量显示 -->
+  <rect x="25" y="30" width="130" height="40" rx="3" class="charge-level" fill="#8BC34A"/>
+  
+  <!-- 电量条纹 -->
+  <g stroke="#7CB342" stroke-width="1">
+    <line x1="35" y1="35" x2="35" y2="65"/>
+    <line x1="45" y1="35" x2="45" y2="65"/>
+    <line x1="55" y1="35" x2="55" y2="65"/>
+    <line x1="65" y1="35" x2="65" y2="65"/>
+    <line x1="75" y1="35" x2="75" y2="65"/>
+    <line x1="85" y1="35" x2="85" y2="65"/>
+    <line x1="95" y1="35" x2="95" y2="65"/>
+    <line x1="105" y1="35" x2="105" y2="65"/>
+    <line x1="115" y1="35" x2="115" y2="65"/>
+    <line x1="125" y1="35" x2="125" y2="65"/>
+    <line x1="135" y1="35" x2="135" y2="65"/>
+    <line x1="145" y1="35" x2="145" y2="65"/>
+  </g>
+  
+  <!-- 电量文字 -->
+  <text x="90" y="55" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">280km</text>
+</svg>

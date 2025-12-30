@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .motor-outer { fill: #007AFF; stroke: #0056b3; stroke-width: 2; }
+    .motor-inner { fill: #4DA6FF; }
+    .coil { fill: #B3D9FF; }
+    .shaft { fill: #333; }
+  </style>
+  
+  <!-- 电机外壳 -->
+  <circle cx="100" cy="100" r="80" class="motor-outer"/>
+  
+  <!-- 电机内壳 -->
+  <circle cx="100" cy="100" r="60" class="motor-inner"/>
+  
+  <!-- 线圈 -->
+  <g class="coil">
+    <ellipse cx="100" cy="70" rx="25" ry="10"/>
+    <ellipse cx="100" cy="100" rx="25" ry="10"/>
+    <ellipse cx="100" cy="130" rx="25" ry="10"/>
+  </g>
+  
+  <!-- 转轴 -->
+  <circle cx="100" cy="100" r="15" class="shaft"/>
+  
+  <!-- 轴承 -->
+  <circle cx="100" cy="100" r="8" fill="#666"/>
+  
+  <!-- 标签文字 -->
+  <text x="100" y="180" font-family="Arial" font-size="16" fill="#007AFF" text-anchor="middle">330kW</text>
+  <text x="100" y="195" font-family="Arial" font-size="12" fill="#007AFF" text-anchor="middle">双电机</text>
+</svg>

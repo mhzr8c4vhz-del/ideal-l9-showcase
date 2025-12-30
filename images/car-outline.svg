@@ -1,0 +1,33 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .car-body { fill: #007AFF; stroke: #0056b3; stroke-width: 2; }
+    .wheel { fill: #333; }
+    .window { fill: #a0d8ff; }
+  </style>
+  
+  <!-- 车身 -->
+  <rect x="50" y="80" width="300" height="60" rx="15" class="car-body"/>
+  
+  <!-- 车顶 -->
+  <rect x="100" y="60" width="200" height="40" rx="10" class="car-body"/>
+  
+  <!-- 前窗 -->
+  <rect x="110" y="65" width="60" height="25" rx="5" class="window"/>
+  
+  <!-- 后窗 -->
+  <rect x="230" y="65" width="60" height="25" rx="5" class="window"/>
+  
+  <!-- 轮胎 -->
+  <circle cx="120" cy="150" r="25" class="wheel"/>
+  <circle cx="280" cy="150" r="25" class="wheel"/>
+  
+  <!-- 轮毂 -->
+  <circle cx="120" cy="150" r="10" fill="#ccc"/>
+  <circle cx="280" cy="150" r="10" fill="#ccc"/>
+  
+  <!-- 前灯 -->
+  <rect x="45" y="90" width="10" height="15" rx="2" fill="#ffcc00"/>
+  
+  <!-- 尾灯 -->
+  <rect x="345" y="90" width="10" height="15" rx="2" fill="#ff3300"/>
+</svg>

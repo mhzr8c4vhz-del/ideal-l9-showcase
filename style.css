@@ -1,0 +1,436 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #007AFF;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://example.com/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007AFF;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0062cc;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 122, 255, 0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.bg-dark {
+    background-color: #f8f8f8;
+}
+
+/* Overview Section */
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.overview-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.overview-item:hover {
+    transform: translateY(-10px);
+}
+
+.overview-item h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #007AFF;
+}
+
+.overview-item p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Performance Section */
+.performance-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.performance-text h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.performance-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.specs-list {
+    display: grid;
+    gap: 20px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.spec-label {
+    font-weight: 500;
+}
+
+.spec-value {
+    font-weight: 700;
+    color: #007AFF;
+}
+
+.performance-image .illustration {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+/* Design Section */
+.design-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.design-image .illustration {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.design-text h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.design-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Technology Section */
+.technology-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.technology-text h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.technology-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.technology-image .illustration {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+/* Safety Section */
+.safety-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.safety-image .illustration {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.safety-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.safety-text h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.safety-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Specifications Section */
+.specs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.spec-category {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.spec-category h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007AFF;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.specs-table td {
+    padding: 12px 0;
+}
+
+.specs-table td:first-child {
+    font-weight: 500;
+    color: #666;
+}
+
+.specs-table td:last-child {
+    text-align: right;
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .performance-content,
+    .design-content,
+    .technology-content,
+    .safety-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 48px;
+    }
+    
+    .hero-content p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    .nav ul {
+        margin-top: 15px;
+    }
+    
+    .nav ul li {
+        margin: 0 10px;
+    }
+    
+    .hero {
+        margin-top: 120px;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section h2 {
+        font-size: 28px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .specs-container {
+        grid-template-columns: 1fr;
+    }
+}
